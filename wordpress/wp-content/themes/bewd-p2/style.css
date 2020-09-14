@@ -47,7 +47,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
-
+# Custom/user
+	- Type
+	- Element
+	- Components
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -967,3 +970,27 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+
+.site-header{
+/*	background: red;*/
+}
+/* Is currently p, needs to be made into h1 */
+.site-title{
+	font-size: 2rem;
+	margin: 10px;
+}
+
+.main-navigation{
+	max-width: 10em;
+	float: right;
+}
+
+
+.hero{
+	
+}
+

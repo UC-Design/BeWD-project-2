@@ -14,6 +14,17 @@
 
 get_header();
 ?>
+	
+	<?php 
+	// using ACF to get a hero image for the home page
+	$image = get_field('hero_image');
+	$size = 'full'; // (thumbnail, medium, large, full or custom size)
+	if( $image ) {
+		echo "<div class='hero'>";
+		echo wp_get_attachment_image( $image, $size );
+		echo "</div>";
+	}
+	?>
 
 	<main id="primary" class="site-main">
 
