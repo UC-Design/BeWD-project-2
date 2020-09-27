@@ -41,7 +41,7 @@ if ( ! function_exists( 'bewd_p2_setup' ) ) :
 		add_theme_support( 'title-tag' );
 
 		/*
-		 * Enable support for Post Thumbnails on posts and pages.
+		 * Enable support for Post Thumbnails on posts and pages. Enables featured images.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
