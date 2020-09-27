@@ -41,7 +41,11 @@ if ( ! function_exists( 'bewd_p2_setup' ) ) :
 		add_theme_support( 'title-tag' );
 
 		/*
+<<<<<<< HEAD
 		 * Enable support for Post Thumbnails on posts and pages.
+=======
+		 * Enable support for Post Thumbnails on posts and pages. Enables featured images.
+>>>>>>> wordpress-integration
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
@@ -140,8 +144,16 @@ add_action( 'widgets_init', 'bewd_p2_widgets_init' );
  * Enqueue scripts and styles.
  */
 function bewd_p2_scripts() {
+<<<<<<< HEAD
 	wp_enqueue_style( 'bewd-p2-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'bewd-p2-style', 'rtl', 'replace' );
+=======
+	
+	wp_enqueue_style( 'bewd-p2-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_style_add_data( 'bewd-p2-style', 'rtl', 'replace' );
+	
+	//wp_enqueue_style('bewd-p2-fonts','<insert Google Fonts here>');
+>>>>>>> wordpress-integration
 
 	wp_enqueue_script( 'bewd-p2-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 

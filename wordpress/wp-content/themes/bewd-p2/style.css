@@ -47,7 +47,14 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Utilities
 	- Accessibility
 	- Alignments
+<<<<<<< HEAD
 
+=======
+# Custom/user
+	- Type
+	- Element
+	- Components
+>>>>>>> wordpress-integration
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -403,7 +410,12 @@ select,
 optgroup,
 textarea {
 	color: #404040;
+<<<<<<< HEAD
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+=======
+/*	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;*/
+	font-family: sans-serif;
+>>>>>>> wordpress-integration
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -967,3 +979,37 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+<<<<<<< HEAD
+=======
+
+/*--------------------------------------------------------------
+# Custom
+--------------------------------------------------------------*/
+
+aside{
+	background: white;
+/*	display: none;*/
+}
+
+.site-header{
+/*	background: red;*/
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 25px;
+}
+/* Is currently p, needs to be made into h1 */
+.site-title{
+	font-size: 2rem;
+	display: inline-block;
+}
+
+.main-navigation{
+	display: inline-block;
+}
+
+
+.hero{
+/*	width: 100%;*/
+}
+
+>>>>>>> wordpress-integration
