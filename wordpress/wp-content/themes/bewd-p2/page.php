@@ -14,8 +14,6 @@
 
 get_header();
 ?>
-<<<<<<< HEAD
-=======
 	
 	<?php 
 	// using ACF to get a hero image for the home page
@@ -27,7 +25,6 @@ get_header();
 		echo "</div>";
 	}
 	?>
->>>>>>> wordpress-integration
 
 	<main id="primary" class="site-main">
 

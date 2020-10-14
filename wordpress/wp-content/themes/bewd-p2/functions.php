@@ -41,16 +41,20 @@ if ( ! function_exists( 'bewd_p2_setup' ) ) :
 		add_theme_support( 'title-tag' );
 
 		/*
-<<<<<<< HEAD
-		 * Enable support for Post Thumbnails on posts and pages.
-=======
 		 * Enable support for Post Thumbnails on posts and pages. Enables featured images.
->>>>>>> wordpress-integration
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+//		Custom image sizes
+//		May have to regenerate thumbnails after modifying this
+//		https://developer.wordpress.org/reference/functions/add_image_size/
+//		if ( function_exists( 'add_image_size' ) ) { 
+//			add_image_size( 'heading-thumb', 200, 200, TRUE );
+//			add_image_size( 'search-thumb', 220, 180, true );
+//		}
+		
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
@@ -106,6 +110,7 @@ if ( ! function_exists( 'bewd_p2_setup' ) ) :
 		);
 	}
 endif;
+
 add_action( 'after_setup_theme', 'bewd_p2_setup' );
 
 /**
@@ -144,16 +149,14 @@ add_action( 'widgets_init', 'bewd_p2_widgets_init' );
  * Enqueue scripts and styles.
  */
 function bewd_p2_scripts() {
-<<<<<<< HEAD
+
 	wp_enqueue_style( 'bewd-p2-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'bewd-p2-style', 'rtl', 'replace' );
-=======
 	
 	wp_enqueue_style( 'bewd-p2-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'bewd-p2-style', 'rtl', 'replace' );
 	
 	//wp_enqueue_style('bewd-p2-fonts','<insert Google Fonts here>');
->>>>>>> wordpress-integration
 
 	wp_enqueue_script( 'bewd-p2-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
